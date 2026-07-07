@@ -3,6 +3,7 @@
 This repository contains public localization files for Godius translation review.
 
 Feedback form: TODO: add Google Form URL  
+Repository: https://github.com/griffith06/godius  
 GitHub pull requests are also welcome for users who are comfortable editing JSON.
 
 ## Files
