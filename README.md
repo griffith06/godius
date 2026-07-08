@@ -10,19 +10,19 @@ GitHub pull requests are also welcome for users who are comfortable editing JSON
 
 Translation files are in `strings/`.
 
-| Language | Main strings | UI strings |
-| --- | --- | --- |
-| Korean | `ko.json` | `ui_ko.json` |
-| English | `en.json` | `ui_en.json` |
-| Japanese | `ja.json` | `ui_ja.json` |
-| Simplified Chinese | `zh-CN.json` | `ui_zh-CN.json` |
-| Traditional Chinese | `zh-TW.json` | `ui_zh-TW.json` |
-| German | `de.json` | `ui_de.json` |
-| Spanish | `es.json` | `ui_es.json` |
-| French | `fr.json` | `ui_fr.json` |
-| Polish | `pl.json` | `ui_pl.json` |
-| Portuguese (Brazil) | `pt-BR.json` | `ui_pt-BR.json` |
-| Russian | `ru.json` | `ui_ru.json` |
+| Language | File |
+| --- | --- |
+| Korean | `ko.json` |
+| English | `en.json` |
+| Japanese | `ja.json` |
+| Simplified Chinese | `zh-CN.json` |
+| Traditional Chinese | `zh-TW.json` |
+| German | `de.json` |
+| Spanish | `es.json` |
+| French | `fr.json` |
+| Polish | `pl.json` |
+| Portuguese (Brazil) | `pt-BR.json` |
+| Russian | `ru.json` |
 
 ## Important Rules
 
