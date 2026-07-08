@@ -30,7 +30,7 @@ Translation files are in `LocalizeOverride/strings/`.
 
 Localization override works only in a Godius build that supports the `LocalizeOverride` folder.
 
-In older builds, `.pak` files have priority and local JSON files are not loaded. Once override support is available, copy the `LocalizeOverride` folder into your Godius Steam install folder and edit JSON files under `LocalizeOverride/strings/`.
+In older builds, `.pak` files have priority and local JSON files are not loaded. Once override support is available, copy the `LocalizeOverride` folder into your Godius Steam install folder, set `LocalizationOverride=1` in `User/settings.opt` if needed, and edit JSON files under `LocalizeOverride/strings/`. Supported builds may reload the current language with `Ctrl+Alt+L`; otherwise restart the game.
 
 ## Important Rules
 

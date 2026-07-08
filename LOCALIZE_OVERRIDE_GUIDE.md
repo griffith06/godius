@@ -8,6 +8,12 @@ Localization override works only in a Godius build that supports the `LocalizeOv
 
 In older builds, `.pak` files have priority and local JSON files are not loaded. If your changes do not appear in game, please wait for a build that includes localization override support.
 
+If your build requires an explicit option, add or set the following value in `User/settings.opt`:
+
+```text
+LocalizationOverride=1
+```
+
 ## Folder Layout
 
 Place the `LocalizeOverride` folder next to the game executable.
@@ -17,6 +23,8 @@ Godius/
   GcX64R.exe
   base.pak
   00000.pak
+  User/
+    settings.opt
   LocalizeOverride/
     strings/
       en.json
@@ -30,10 +38,12 @@ Only files in `LocalizeOverride/strings/` are used for translation override.
 
 1. Download this repository as a ZIP file or clone it with Git.
 2. Copy the `LocalizeOverride` folder into your Godius Steam install folder.
-3. Open the JSON file for your language in `LocalizeOverride/strings/`.
-4. Edit translated text values only.
-5. Start or restart the game and check the changed text.
-6. Submit your correction through GitHub Pull Request or the official feedback form.
+3. If needed, set `LocalizationOverride=1` in `User/settings.opt`.
+4. Open the JSON file for your language in `LocalizeOverride/strings/`.
+5. Edit translated text values only.
+6. Start or restart the game and check the changed text.
+7. In builds that support live reload, press `Ctrl+Alt+L` to reload the current language after editing JSON.
+8. Submit your correction through GitHub Pull Request or the official feedback form.
 
 ## Language Files
 
@@ -76,6 +86,14 @@ Godius/
 
 주의: 이 기능은 `LocalizeOverride` 지원이 포함된 게임 빌드에서만 동작합니다. 이전 빌드에서는 `.pak` 파일이 우선이라 로컬 JSON 수정이 게임에 반영되지 않습니다.
 
+빌드에서 옵션 활성화가 필요한 경우 `User/settings.opt`에 아래 값을 추가하거나 설정해 주세요.
+
+```text
+LocalizationOverride=1
+```
+
+실행 중 JSON을 다시 수정한 경우, 지원 빌드에서는 `Ctrl+Alt+L`로 현재 언어를 다시 불러올 수 있습니다. 지원하지 않는 빌드에서는 게임을 재시작해 확인해 주세요.
+
 수정할 때는 JSON key를 바꾸지 말고 value 문구만 수정해 주세요. `%s`, `%d`, `\n`, `<green>` 같은 placeholder와 태그는 반드시 유지해야 합니다.
 
 ## 日本語ガイド
@@ -93,5 +111,13 @@ Godius/
 ```
 
 注意: この機能は `LocalizeOverride` に対応したゲームビルドでのみ動作します。古いビルドでは `.pak` ファイルが優先されるため、ローカル JSON の変更はゲームに反映されません。
+
+ビルドでオプションの有効化が必要な場合は、`User/settings.opt` に次の値を追加または設定してください。
+
+```text
+LocalizationOverride=1
+```
+
+実行中に JSON を再編集した場合、対応ビルドでは `Ctrl+Alt+L` で現在の言語を再読み込みできます。対応していないビルドではゲームを再起動して確認してください。
 
 JSON key は変更せず、翻訳テキストの value のみを修正してください。`%s`, `%d`, `\n`, `<green>` などの placeholder とタグは必ず維持してください。
