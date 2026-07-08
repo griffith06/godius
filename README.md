@@ -6,8 +6,6 @@ Feedback form: TODO: add Google Form URL
 Repository: https://github.com/griffith06/godius  
 GitHub pull requests are also welcome for users who are comfortable editing JSON.
 
-Korean operation plan: [LOCALIZATION_OPERATION_ko.md](LOCALIZATION_OPERATION_ko.md)
-
 ## Files
 
 Translation files are in `strings/`.
